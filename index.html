@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cronometro em JavaScript</h1>
+    <main>
+        <div>
+            <h2><span id="hora">0</span> : <span id="minuto">0</span></h2>
+        </div>
+        <button onclick="troca()">Start</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="troca()">Stop</button>
+    </main>
+
+    <script>
+        let mostraHora = document.querySelector("#hora")
+        let mostraMinuto = document.querySelector("#minuto")
+        let hora = minuto =  0
+        let comeca = false
+
+        // liga e desliga o cronometro
+        const troca= () =>{
+            if(comeca == true){
+                comeca = false
+            }else{
+                comeca = true
+            }
+        }
+
+        // se o cronometro tiver começado, minuto e hora é incrementado
+        const start = () =>{
+            
+            if(comeca == true){
+                
+                minuto += 1
+        
+                if(minuto == 60){
+                    minuto = 0
+                    hora += 1
+                }
+        
+                mostraHora.innerHTML = hora
+                mostraMinuto.innerHTML = minuto
+            }
+        }
+        
+        // reseta o cronometro
+        const reset = () =>{
+            minuto = 0
+            hora = 0
+
+            mostraHora.innerHTML = hora
+            mostraMinuto.innerHTML = minuto
+
+            comeca = false
+        }
+        
+        // chama funçao start a cada segundo
+        setInterval(start, 1000)
+        </script>
+</body>
+</html>
