@@ -62,9 +62,23 @@ const reset = () => {
     minuto = 0
     hora = 0
 
-    mostraSegundo.innerHTML = '00'
-    mostraMinuto.innerHTML = '00'
-    mostraHora.innerHTML = '00'
+    if(segundo.toString().length > 1){
+        mostraSegundo.innerHTML = segundo
+    }else{
+        mostraSegundo.innerHTML = 0 + segundo.toString()
+    }
+
+    if(minuto.toString().length > 1){
+        mostraMinuto.innerHTML = minuto
+    }else{
+        mostraMinuto.innerHTML = 0 + minuto.toString()
+    }
+
+    if(hora.toString().length > 1){
+        mostraHora.innerHTML = hora
+    }else{
+        mostraHora.innerHTML = 0 + hora.toString()
+    }
 
     comeca = false
     botao.innerHTML = "Start"
