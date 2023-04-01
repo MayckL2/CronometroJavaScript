@@ -8,62 +8,22 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body  onkeypress="enter(event)">
     <h1>Cronometro em JavaScript</h1>
     <main>
         <div>
-            <h2><span id="hora">0</span> : <span id="minuto">0</span></h2>
+            <h2><span id="hora">00</span> : <span id="minuto">00</span> : <span id="segundo">00</span></h2>
         </div>
-        <button onclick="troca()">Start</button>
-        <button onclick="reset()">Reset</button>
-        <button onclick="troca()">Stop</button>
+        <div>
+            <button onclick="troca()" id="start">Start</button>
+            <button onclick="reset()">Reset</button>
+        </div>
     </main>
 
-    <script>
-        let mostraHora = document.querySelector("#hora")
-        let mostraMinuto = document.querySelector("#minuto")
-        let hora = minuto =  0
-        let comeca = false
+    <footer>
+        FEITO POR <a href="https://github.com/MayckL2" target="_blank">MAYCK LUCIANO</a>
+    </footer>
 
-        // liga e desliga o cronometro
-        const troca= () =>{
-            if(comeca == true){
-                comeca = false
-            }else{
-                comeca = true
-            }
-        }
-
-        // se o cronometro tiver começado, minuto e hora é incrementado
-        const start = () =>{
-            
-            if(comeca == true){
-                
-                minuto += 1
-        
-                if(minuto == 60){
-                    minuto = 0
-                    hora += 1
-                }
-        
-                mostraHora.innerHTML = hora
-                mostraMinuto.innerHTML = minuto
-            }
-        }
-        
-        // reseta o cronometro
-        const reset = () =>{
-            minuto = 0
-            hora = 0
-
-            mostraHora.innerHTML = hora
-            mostraMinuto.innerHTML = minuto
-
-            comeca = false
-        }
-        
-        // chama funçao start a cada segundo
-        setInterval(start, 1000)
-        </script>
+    <script src="script.js"></script>
 </body>
 </html>
