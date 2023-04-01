@@ -60,16 +60,16 @@ const start = () => {
 const reset = () => {
     segundo = 0
     minuto = 0
+    hora = 0
 
-    mostraMinuto.innerHTML = minuto
-    mostraSegundo.innerHTML = segundo
+    mostraSegundo.innerHTML = '00'
+    mostraMinuto.innerHTML = '00'
+    mostraHora.innerHTML = '00'
 
     comeca = false
     botao.innerHTML = "Start"
 }
 
-// chama funçao start a cada segundo
-setInterval(start, 1000)
 
 // aciona funçao pela tecla precionada
 const enter = (event) =>{
@@ -78,3 +78,6 @@ const enter = (event) =>{
         troca()
     }
 }
+
+// chama funçao start a cada segundo
+setInterval(start, 1000)
