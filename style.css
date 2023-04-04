@@ -1,79 +1,86 @@
 @font-face {
-    font-family: 'clock';
-    src: url(DS-DIGIB.TTF);
+  font-family: 'clock';
+  src: url(DS-DIGIB.TTF);
 }
 
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
-body{
-    font-family: sans-serif;
-    /* background-color: rgb(33, 10, 55); */
-    background-image: radial-gradient(purple 20%, black 80%);
-    background-repeat: no-repeat;
-    height: 100vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow-y: hidden;
+body {
+  font-family: sans-serif;
+  /* background-color: rgb(33, 10, 55); */
+  background-image: radial-gradient(purple 20%, black 80%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: hidden;
 }
 
-h1{
-    margin: 20px;
-    text-shadow: 1px 3px 5px orange;
-    font-family: 'clock';
-    font-size: 40px;
+h1 {
+  margin: 20px;
+  text-shadow: 1px 3px 5px orange;
+  font-family: 'clock';
+  font-size: 40px;
 }
 
-main{
-    background-color: darkslategray;
-    padding: 50px 50px 0px 50px;
-    border-radius: 30%;
-    border: outset 10px gray;
+main {
+  background-color: darkslategray;
+  padding: 50px 50px 0px 50px;
+  border-radius: 30%;
+  border: outset 10px gray;
 }
 
-main div{
-    background-color: gray;
-    /* padding: 5px 10px; */
-    width: 350px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    border: outset gray;
+main div {
+  background-color: gray;
+  /* padding: 5px 10px; */
+  width: 350px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border: outset gray;
 }
 
-main div:nth-of-type(2){
-    background-color: transparent;
-    border: none;
-    margin: 0px;
-    display: flex;
-    gap: 20px;
+main div:nth-of-type(2) {
+  background-color: transparent;
+  border: none;
+  margin: 0px;
+  display: flex;
+  gap: 20px;
 }
 
-main div h2{
-    font-size: 50px;
-    font-family: 'clock', sans-serif;
+main div h2 {
+  font-size: 50px;
+  font-family: 'clock', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-main button{
-    background-color: transparent;
-    border: outset gray;
-    border-radius: 10px;
-    font-size: 15px;
-    color: white;
-    padding: 5px 10px;
-    margin-bottom: 30px;
-    cursor: pointer;
-    width: 80px;
-    transition: all 0.5s;
+main div h2 span {
+  width: 50px;
 }
 
-main button:active{
-    border: solid gray;
+main button {
+  background-color: transparent;
+  border: outset gray;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  width: 80px;
+  transition: all 0.5s;
+}
+
+main button:active {
+  border: solid gray;
 }
 
 
@@ -118,12 +125,13 @@ main button:hover{
     color: white;
 } */
 
-footer{
-    position: absolute;
-    bottom: 10px;
-    word-spacing: 5px;
+footer {
+  position: absolute;
+  bottom: 10px;
+  word-spacing: 5px;
 }
-footer a{
-    text-decoration: none;
-    color: aqua;
+
+footer a {
+  text-decoration: none;
+  color: aqua;
 }

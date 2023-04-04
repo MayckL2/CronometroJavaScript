@@ -56,12 +56,14 @@ const start = () => {
     } else {
       mostraMinuto.innerHTML = 0 + minuto.toString();
     }
-
+    
     if (hora.toString().length > 1) {
       mostraHora.innerHTML = hora;
     } else {
       mostraHora.innerHTML = 0 + hora.toString();
     }
+    
+    document.title = `Cronometro ${hora}:${minuto}:${segundo}`
   }
 };
 
@@ -77,7 +79,7 @@ const reset = () => {
   } else {
     mostraMilisegundo.innerHTML = 0 + milisegundo.toString();
   }
-  
+
   if (segundo.toString().length > 1) {
     mostraSegundo.innerHTML = segundo;
   } else {
