@@ -38,7 +38,7 @@ main{
 main div{
     background-color: gray;
     /* padding: 5px 10px; */
-    width: 250px;
+    width: 350px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
