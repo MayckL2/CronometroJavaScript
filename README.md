@@ -2,14 +2,15 @@
 
 <hr>
 
-<img alt="print_temporizador" src="https://user-images.githubusercontent.com/103364944/230164019-40e00bce-dc09-4bdb-91ee-afccd6b3c98c.png">
+<img alt="print_cronometro" src="https://user-images.githubusercontent.com/103364944/230164596-a4e96a81-a796-4fbc-9e83-1e3753819bfb.png">
 
 <hr>
 
 <h2 align=center>Caracteristicas</h2>
 
-- [x] Inserção de valores atraves de botões na tela
-- [x] Inserção de valores atraves de botões no teclado
-- [x] Pausando a contagem no meio do processo
-- [x] Iniciando contagem ao precionar enter no teclado
-- [x] Iniciando contagem ao precionar Start na tela
+- [x] Cronometragem de hora
+- [x] Cronometragem de minuto
+- [x] Cronometragem de segundo
+- [x] Cronometragem de milisegundo
+- [x] Pausar no durante a cronometragem
+- [x] Resetar o cronometro do começo
